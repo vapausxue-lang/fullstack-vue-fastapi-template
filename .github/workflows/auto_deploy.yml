@@ -1,11 +1,13 @@
 name: deploy
+
 on:
   push:
     branches: ["main"]
     paths:
       - "frontend/**"
       - ".github/workflows/auto_deploy.yml"
-        workflow_dispatch:
+  workflow_dispatch:
+
 env:
   VITE_APP_BACKEND_ROOT_ENDPOINT: ${{ vars.VITE_APP_BACKEND_ROOT_ENDPOINT }}
 

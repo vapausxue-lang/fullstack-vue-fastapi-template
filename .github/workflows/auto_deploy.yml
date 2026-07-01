@@ -5,6 +5,7 @@ on:
     paths:
       - "frontend/**"
       - ".github/workflows/auto_deploy.yml"
+        workflow_dispatch:
 env:
   VITE_APP_BACKEND_ROOT_ENDPOINT: ${{ vars.VITE_APP_BACKEND_ROOT_ENDPOINT }}
 
